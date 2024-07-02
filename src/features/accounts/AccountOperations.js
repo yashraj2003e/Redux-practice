@@ -10,8 +10,8 @@ function AccountOperations() {
   const [currency, setCurrency] = useState("USD");
   const dispatch = useDispatch();
 
-  const account = useSelector((store) => store.account);
-  const isLoading = useSelector((store) => store.account.isLoading);
+  const account = useSelector((store) => store.accountReducer);
+  const isLoading = useSelector((store) => store.accountReducer.isLoading);
 
   console.log(account);
 
